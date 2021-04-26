@@ -479,3 +479,78 @@ a:visited {
 a:hover {
   color: var(--light-color);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+/* Desktop ---------------------------- */
+@media screen and (max-width: 1200px) {
+  .category {
+    font-size: 95px;
+    height: 95px;
+    transform: translateY(-3px);
+  }
+  .example {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    height: 30px;
+    font-size: 30px;
+  }
+
+  .category {
+    font-size: 77px;
+    height: 75px;
+    transform: translateY(-3px);
+  }
+
+  .example {
+    font-size: 25px;
+  }
+
+  .arrow {
+    font-size: 45px;
+  }
+
+  #main-right {
+    max-width: 90%;
+  }
+
+  .panel {
+    min-height: 350px;
+  }
+
+  #macro-panel {
+    margin-bottom: var(--margin);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 10px;
+    font-size: 20px;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  #main-left {
+    width: 100%;
+    margin-bottom: var(--margin);
+  }
+
+  #main-right {
+    max-width: 90%;
+  }
+
+  .panel {
+    min-height: 350px;
+  }
+
+  #macro-panel {
+    margin-bottom: var(--margin);
+  }
+}
